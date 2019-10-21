@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>610ade3e-f984-4276-b4db-e4695839a750</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BbcFeed\BbcFeed.csproj" />
+    <ProjectReference Include="..\RadioFeed\RadioFeed.csproj" />
+    <ProjectReference Include="..\TestFeed\TestFeed.csproj" />
+  </ItemGroup>
+
+</Project>
